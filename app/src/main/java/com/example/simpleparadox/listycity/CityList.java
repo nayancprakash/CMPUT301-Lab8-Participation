@@ -39,7 +39,10 @@ public class CityList {
      *      Return the reverse sorted list
      */
     public List<City> getCitiesReverse() {
-        return null;
+        List<City> list = cities;
+        Collections.sort(list);
+        Collections.reverse(list);
+        return list;
     }
 
     /**
