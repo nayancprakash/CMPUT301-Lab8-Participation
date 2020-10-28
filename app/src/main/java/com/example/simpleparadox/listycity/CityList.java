@@ -34,6 +34,18 @@ public class CityList {
     }
 
     /**
+     * This returns a reverse sorted list of cities
+     * @return
+     *      Return the reverse sorted list
+     */
+    public List<City> getCitiesReverse() {
+        List<City> list = cities;
+        Collections.sort(list);
+        Collections.reverse(list);
+        return list;
+    }
+
+    /**
      * This method checks to see if a city already exists in the list
      * @param city
      *      City to check
