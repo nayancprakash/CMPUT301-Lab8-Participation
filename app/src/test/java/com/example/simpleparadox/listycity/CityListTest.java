@@ -104,7 +104,7 @@ class CityListTest {
         cityList.add(city);
         cityList.add(city2);
 
-        assertEquals(3, cityList.getCitiesReverse().length);
+        assertEquals(3, cityList.getCitiesReverse().size());
         assertEquals("Regina", cityList.getCitiesReverse().get(0).getCityName());
         assertEquals("Edmonton", cityList.getCitiesReverse().get(1).getCityName());
         assertEquals("Charlottetown", cityList.getCitiesReverse().get(2).getCityName());
